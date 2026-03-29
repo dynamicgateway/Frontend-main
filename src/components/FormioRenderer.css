@@ -1,0 +1,139 @@
+/* Custom Form.io styling to match MUNI design system */
+
+.formio-muni-wrapper {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Input fields styling to match MUI TextField */
+.formio-muni-wrapper .formio-component-textfield input,
+.formio-muni-wrapper .formio-component-email input,
+.formio-muni-wrapper .formio-component-password input,
+.formio-muni-wrapper .formio-component-number input,
+.formio-muni-wrapper .formio-component-phoneNumber input,
+.formio-muni-wrapper .formio-component-textarea textarea {
+  width: 100%;
+  padding: 16.5px 14px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 1.4375em;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+}
+
+.formio-muni-wrapper .formio-component-textfield input:hover,
+.formio-muni-wrapper .formio-component-email input:hover,
+.formio-muni-wrapper .formio-component-password input:hover,
+.formio-muni-wrapper .formio-component-number input:hover,
+.formio-muni-wrapper .formio-component-phoneNumber input:hover,
+.formio-muni-wrapper .formio-component-textarea textarea:hover {
+  border-color: rgba(0, 0, 0, 0.87);
+}
+
+.formio-muni-wrapper .formio-component-textfield input:focus,
+.formio-muni-wrapper .formio-component-email input:focus,
+.formio-muni-wrapper .formio-component-password input:focus,
+.formio-muni-wrapper .formio-component-number input:focus,
+.formio-muni-wrapper .formio-component-phoneNumber input:focus,
+.formio-muni-wrapper .formio-component-textarea textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+  border-width: 2px;
+  padding: 15.5px 13px; /* Adjust for thicker border */
+}
+
+/* Label styling to match MUI */
+.formio-muni-wrapper .formio-component label {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Required asterisk styling */
+.formio-muni-wrapper .formio-component label.field-required::after {
+  content: ' *';
+  color: #d32f2f;
+}
+
+/* Error message styling */
+.formio-muni-wrapper .formio-errors .error {
+  color: #d32f2f;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
+/* Button styling to match MUI primary button */
+.formio-muni-wrapper .btn-primary {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02857em;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),
+              0px 2px 2px 0px rgba(0,0,0,0.14),
+              0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.formio-muni-wrapper .btn-primary:hover {
+  background-color: #1565c0;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),
+              0px 4px 5px 0px rgba(0,0,0,0.14),
+              0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.formio-muni-wrapper .btn-primary:active {
+  background-color: #0d47a1;
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),
+              0px 8px 10px 1px rgba(0,0,0,0.14),
+              0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+/* Form group spacing */
+.formio-muni-wrapper .formio-component {
+  margin-bottom: 24px;
+}
+
+/* Help text styling */
+.formio-muni-wrapper .form-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  line-height: 1.66;
+}
+
+/* Placeholder styling */
+.formio-muni-wrapper input::placeholder,
+.formio-muni-wrapper textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+/* Remove default Form.io styling that conflicts */
+.formio-muni-wrapper .form-control {
+  background-image: none;
+  box-shadow: none;
+}
+
+.formio-muni-wrapper .form-control:focus {
+  box-shadow: none;
+}
+
+/* Adjust container padding */
+.formio-muni-wrapper .formio-form {
+  padding: 24px;
+}

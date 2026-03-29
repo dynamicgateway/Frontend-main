@@ -1,0 +1,70 @@
+{
+  "i18n-ally.localesPaths": ["src/assets/locales"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dotenv.enableAutocloaking": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "eslint.codeActionsOnSave.rules": [
+    "@typescript-eslint/consistent-type-imports",
+    "@typescript-eslint/no-import-type-side-effects",
+    "import-x/no-duplicates",
+    "import-x/first",
+    "jsonc/sort-keys"
+  ],
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ],
+  "eslint.nodePath": "./node_modules",
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.validate": ["javascript", "javascriptreact", "json", "jsonc", "yaml", "typescript", "typescriptreact"],
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "git.autofetch": true,
+  "gitPrefix.pattern": ".*/",
+  "gitPrefix.replacement": "",
+  "javascript.format.enable": false,
+  "javascript.preferences.quoteStyle": "single",
+  "jest.runMode": "on-demand",
+  "prettier.configPath": "./prettier.config.mjs",
+  "prettier.requireConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+
+    // For the `classes` prop of MUI components
+    "classes"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.experimental.classRegex": [
+    // For utils from the `tailwind-merge` library, and for the `twObject` and `twConsumeCssVariable` utils
+    ["(?:twMerge|twJoin|twObject|twConsumeCssVar)\\(([^;]*)[\\);]", "[`'\"`]([^'\"`;]*)[`'\"`]"],
+
+    // For the `tw` custom util
+    "tw\\`(.*)\\`"
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.format.enable": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "testing.automaticallyOpenTestResults": "neverOpen",
+  "eslint.format.enable": true
+}

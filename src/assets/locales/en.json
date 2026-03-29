@@ -1,0 +1,408 @@
+{
+  "common": {
+    "title": "Pivoters",
+    "next": "Next",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "generalError": "Something went wrong. Please try again later.",
+    "generalSuccess": "the data has been updated successfully",
+    "welcome": "Welcome",
+    "logout": "Logout",
+    "uploadResume": "Upload Resume",
+    "onboardingNotCompleted": "Complete Profile to Generate Resume.",
+    "version": "v0.2.3"
+  },
+  "placeholders": {
+    "title": "Title",
+    "enter_here": "Enter here"
+  },
+  "snackbar_messages": {
+    "downloading_started": "Downloading started.",
+    "downloading_failed": "Downloading failed.",
+    "downloading_completed": "Downloading completed. Check your downloads folder.",
+    "something_went_wrong_please_try_again_later": "Something went wrong. Please try again later."
+  },
+  "appHeader": {
+    "pricing": "Pricing",
+    "help": "Help",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "heyUser": "Hey, {{name}}",
+    "user": "user"
+  },
+  "validation_messages": {
+    "n_is_required": "{{n}} is required",
+    "n_must_be_x_characters_or_less": "{{n}} must be {{x}} characters or less",
+    "please_enter_an_email_address_using_the_following_format": "Please enter an email address using the following format: \"User@domain.com\"",
+    "password_must_be_at_least_n_characters": "Password must be at least {{n}} characters",
+    "password_must_contain_at_least_one_lowercase_letter_a_z": "Password must contain at least one lowercase letter (a-z)",
+    "password_must_contain_at_least_one_uppercase_letter_a_z": "Password must contain at least one uppercase letter (A-Z)",
+    "password_must_contain_at_least_one_number_0_9": "Password must contain at least one number (0-9)",
+    "password_must_contain_at_least_one_special_character_n": "Password must contain at least one special character ({{n}})",
+    "passwords_dont_match": "Passwords don't match",
+    "n_can_only_contain_letters_numbers_and_spaces": "{{n}} can only contain letters, numbers, and spaces",
+    "n_is_invalid": "{{n}} is invalid",
+    "failed_to_upload_n_files": "Failed to upload {{n}} files.",
+    "file_name_already_exists_please_try_a_different_name": "File name already exists. Please try a different name."
+  },
+  "navBar": {
+    "activelyLookingForJob": "Looking For a Job",
+    "switchTooltip": "This helps us match you with employers"
+  },
+
+  "landingPage": {
+    "subtitle": "Our AI-powered platform connects different professionals with meaningful opportunities. Build your profile with our intelligent assistant and get matched with jobs or candidates that fit your goals.",
+    "jobSeekerTitle": "I'm looking for a job",
+    "jobSeekerDesc": "Build your profile with AI assistance, showcase your skills, and get matched with opportunities that align with your career goals.",
+    "jobSeekerButtonText": "Get Started as a Candidate",
+    "employerTitle": "I'm hiring",
+    "findYouPerfect": "Find You Perfect",
+    "careerMatch": "Career Match",
+    "employerDesc": "Find the perfect candidates for your team. Our AI matches you with professionals who have the skills and experience you need.",
+    "employerButtonText": "Get Started as an Employer",
+    "jobSeekerIconAlt": "Job Seeker",
+    "employerIconAlt": "Employer",
+    "arrow": "→"
+  },
+  "navnar": {
+    "toggleText": "I’m still looking for a job"
+  },
+
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember Me  ",
+    "forgotPassword": "Forgot Password",
+    "goToLogin": "Go to Login",
+    "errorMessage": "Email or password are incorrect"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "email": "Email",
+    "iAgreeWith": "I agree with",
+    "TermsAndConditions": " Terms & Conditions",
+    "goToSignUp": "Sign Up",
+    "gotToVerify": "Go to Verify page ",
+    "emailSent": "We sent an email verification, please check your email."
+  },
+  "createPassword": {
+    "title": "Create Password",
+    "typePassword": "Type Password",
+    "reTypePassword": "Retype Password",
+    "submit": "Submit",
+    "errorMessagePasswordsDoNotMatch": "Passwords do not match"
+  },
+  "arnonaRequest": {
+    "title": "Submit Request for Arnona Discount",
+    "description": "Welcome to the Arnona discount request system. Whether you want to check eligibility, submit a new request, or complete a request you've already started - all actions are available to you here.",
+    "discountCalculator": "Discount Calculator",
+    "existingRequest": "Existing Request",
+    "newRequest": "New Request",
+    "scheduleAppointmentText": "Scheduling an appointment in the Arnona department has never been easier. Click and schedule your visit with ease.",
+    "scheduleAppointmentButton": "Schedule appointment with Arnona department"
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "prevPassword": "Previous Password",
+    "typePassword": "Type Password",
+    "reTypePassword": "Retype Password",
+    "submit": "Submit",
+    "errorMessagePasswordsDoNotMatch": "The new password and the retyped password need to be the same"
+  },
+  "userSelection": {
+    "subtitle": "Are you a new user or returning to finish where you left off?",
+    "welcome": "Welcome! Have we",
+    "metBefore": "met before",
+    "newUser": "I'm New Here",
+    "existingUser": "I'm Existing User",
+    "arrow": "→"
+  },
+
+  "forgotPassword": {
+    "title": "Forgot Password",
+    "email": "Email",
+    "submit": "Submit",
+    "errorMessage": "Email is required",
+    "verificationMailSent": "Verification mail sent, please check your email"
+  },
+  "verifyUser": {
+    "title": "Verify User",
+    "email": "Type email",
+    "verificationCode": "Verification Code",
+    "otp": "OTP",
+    "submit": "Submit",
+    "goToLogin": "Go to login ",
+    "errorMessage": "Email is required",
+    "userVerified": "User verified successfully",
+    "userVerifiedTitle": "The user has been verified successfully"
+  },
+  "resetForgotPassword": {
+    "title": "Reset Password",
+    "email": "Type email",
+    "reTypeVerificationPassword": "Retype Verification Code",
+    "verificationPassword": "Verification Code",
+    "password": "Type Password",
+    "reTypePassword": "Retype Password",
+    "errorMessage": "Email is required",
+    "errorMessageOtp": "Verification Code is required",
+    "errorMessagePassword": "Password is required",
+    "passwordUpdated": "Password updated successfully",
+    "submit": "Reset Password",
+    "goToLogin": "Go to login"
+  },
+  "resumeViewer": {
+    "download": "Download Resume",
+    "resumePreview": "Resume Preview",
+    "close": "Close"
+  },
+  "loader": {
+    "generatingResume": "We are generating your resume right now, please wait."
+  },
+  "authoritySelection": {
+    "welcomeTitle": "Welcome to the Digital Space of Your municipal authority",
+    "description": "Here you can enjoy convenient, fast, and secure access to a variety of services, actions, and payments with a click against your local municipal authority. Continue to connect.",
+    "selectAuthority": "Select municipal authority",
+    "takeMeToAuthority": "Take Me to municipal authority",
+    "selectedAuthority": "Selected municipal authority:"
+  },
+  "newLogin": {
+    "quickLogin": "Quick Login",
+    "iHavePassword": "I have a password",
+    "mainTitle": "Connect to the digital space of your municipal authority",
+    "mainDescription": "Authentication is done according to the updated data in the collection system of the local authority",
+    "idNumberLabel": "ID number of 9 digits",
+    "idNumberSubtext": "(including checksum digit)",
+    "idNumberRequired": "ID number is required",
+    "idNumberInvalid": "ID number must be exactly 9 digits",
+    "idNumberNumeric": "ID number must contain only digits",
+    "emailMobileRequired": "Email address or mobile number is required",
+    "emailMobileInvalid": "Please enter a valid email address or mobile number",
+    "idNumberPlaceholder": "ID card/passport number",
+    "emailMobileLabel": "Email address / Mobile",
+    "emailMobilePlaceholder": "Email address/Mobile",
+    "sendCodeButton": "Send me a code",
+    "functionalityInPrep": "Functionality in preparation",
+    "loginWithoutAuth": "Login without authentication",
+    "notRegisteredYet": "Not registered yet?",
+    "clickHere": "Click here"
+  },
+  "verificationCode": {
+    "codeSentToNumber": "Verification code sent to number",
+    "phoneNumber": "05X-XXX3425",
+    "mainInstruction": "Enter the verification code you received to your email address or phone number",
+    "verifyButton": "Verify",
+    "didntReceiveCode": "Didn't receive a code?",
+    "clickToResend": "Click to resend"
+  },
+  "passwordLogin": {
+    "payerNumberLabel": "Payer Number",
+    "payerNumberPlaceholder": "ID Number/Passport",
+    "payerNumberRequired": "Payer number is required",
+    "payerNumberInvalid": "Payer number must be exactly 9 digits",
+    "payerNumberNumeric": "Payer number must contain only digits",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Password",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "forgotPassword": "Forgot Password",
+    "loginButton": "Login"
+  },
+  "nationalLogin": {
+    "quickLogin": "Quick Login",
+    "iHavePassword": "I have a password",
+    "mainTitle": "Welcome to the digital space of your municipal authority",
+    "mainDescription": "To verify your details using the national identification system",
+    "idNumberLabel": "ID number of 9 digits",
+    "idNumberSubtext": "(including check digit)",
+    "idNumberRequired": "ID number is required",
+    "idNumberInvalid": "ID number must be exactly 9 digits",
+    "idNumberNumeric": "ID number must contain only digits",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Password",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "idNumberPlaceholder": "ID card number/passport",
+    "loginButton": "Login",
+    "passwordLoginComingSoon": "Password login functionality coming soon",
+    "loginWithoutAuth": "Login without identification",
+    "notRegisteredYet": "Not registered yet?",
+    "clickHere": "Click here",
+    "quickLoginWithUsername": "For quick login with username and password"
+  },
+  "nationalVerificationCode": {
+    "codeSentToNumber": "Verification code sent to number",
+    "phoneNumber": "05X-XXX3425",
+    "mainInstruction": "What code did you receive?",
+    "codeValidFor": "The code is valid for 5 minutes",
+    "verifyButton": "Continue to the digital space of the municipal authority",
+    "didntReceiveCode": "Didn't receive a code?",
+    "clickToResend": "Click to resend"
+  },
+  "activityCard": {
+    "register": "Register",
+    "group": "Group",
+    "schedule": "Days",
+    "instructor": "Instructor",
+    "location": "Location"
+  },
+  "classesPage": {
+    "title": "Classes and Activities",
+    "subtitle": "Choose from our wide variety of classes and activities",
+    "mainTitle": "Your Next Class Awaits You",
+    "description": "Welcome to the classes and activities page. We have gathered for you all the available classes in the authority so you can easily find the activity that suits you and your children. Discover your next class!",
+    "search": {
+      "freeSearch": "Free Search",
+      "freeSearchPlaceholder": "Football, swimming, mathematics and sciences...",
+      "activityField": "Activity Field",
+      "activityFieldPlaceholder": "Select the field",
+      "classSelection": "Class Selection",
+      "classSelectionPlaceholder": "Select the class",
+      "searchButton": "Search"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "description": "Looking for information on kindergarten or school registration? Want to register your children for a summer camp or a club? You've come to the right place! This page centralizes all services and information on education matters in the authority.",
+    "kindergartenRegistration": "Registration site for kindergartens and first grade",
+    "campRegistration": "Registration for summer camps",
+    "showPlacement": "Displaying placement",
+    "classesRegistration": "Registration for clubs",
+    "scheduleAppointmentText": "Scheduling an appointment for the Education Department has never been easier. Click and schedule your visit with ease.",
+    "scheduleAppointmentButton": "To schedule an appointment with the Education Department"
+  },
+  "engineering": {
+    "title": "Engineering",
+    "description": "Welcome to the digital engineering services page of the authority. Here you can get convenient access to a variety of activities and information on engineering and planning topics, such as renewing permits, viewing planning information, and submitting requests.",
+    "planningInformation": "Planning information sheet",
+    "managerialReserveCourse": "Participation in a managerial reserve course",
+    "noDebtsCertificate": "Certificate of no debts",
+    "renewalNoDebts": "Renewal of certificate of no debts",
+    "seniorCitizensHome": "Operation of the senior citizens' home",
+    "fitnessFacilities": "Fitness facilities near Tabar High School 402",
+    "permitInformationFile": "Information file for permit",
+    "scheduleAppointmentText": "Scheduling an appointment in the Engineering Department has never been easier. Click and schedule your visit with ease.",
+    "scheduleAppointmentButton": "To schedule a meeting in the Engineering Department"
+  },
+  "eventsInfoCardsPage": {
+    "title": "Events and Activities",
+    "mainTitle": "Opportunities and experiences await you",
+    "description": "Welcome to the Authority's space of opportunities and activities! Here you can easily find and purchase tickets for exciting events, register for professional courses, participate in enriching lectures, and pay for services and fees. Discover all the options the Authority offers you.",
+    "search": {
+      "freeSearch": "Free Search",
+      "freeSearchPlaceholder": "What would you like to find today? Type here...",
+      "eventCategory": "Event Category",
+      "eventCategoryPlaceholder": "Select category",
+      "eventType": "Event Type",
+      "eventTypePlaceholder": "Select event type",
+      "searchButton": "Search"
+    }
+  },
+  "openRequestChangePayersPage": {
+    "title": "Open Request for Changing Payers",
+    "instruction": "To get started, choose the reason for the change",
+    "options": {
+      "purchaseSale": "Purchase/Sale of Property",
+      "rentalContract": "Start/End of Rental Contract"
+    }
+  },
+  "selectUserTypePage": {
+    "title": "Open Request for Changing Payers",
+    "instruction": "Choose Who You Are",
+    "options": {
+      "outgoingTenant": "I am the outgoing tenant or property owner",
+      "incomingTenant": "The incoming tenant",
+      "buyer": "I am the buyer",
+      "seller": "I am the seller"
+    }
+  },
+  "requestForLandRegistryPage": {
+    "title": "Opening a Request for Tabu Approval",
+    "description": "Welcome to the online application system for Tabu approval. The system provides a convenient and fast solution for various actions, including approval for sales transactions, registration of a shared building, and more.",
+    "options": {
+      "salesTransaction": "Sales Transaction",
+      "sharedBuildingRegistration": "Registration of a Shared Building",
+      "inheritanceWill": "Inheritance / Execution of a Will",
+      "transferWithoutConsideration": "Transfer without Consideration",
+      "other": "Other"
+    },
+    "issueApprovalText": "To Issue the Approval",
+    "issueApprovalButton": "To Issue the Approval"
+  },
+  "mainMenuPage": {
+    "navigation": {
+      "welfare": "Welfare",
+      "engineering": "Engineering",
+      "parking": "Parking",
+      "supervision": "Supervision",
+      "classes": "Classes"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "engineering": "Engineering",
+      "noDebtsCertificate": "No Debts Certificate",
+      "planningInfoSheet": "Planning Information Sheet",
+      "managementCourse": "Participation in Management Reserve Course",
+      "renewalNoDebts": "Renewal of No Debts Certificate",
+      "permitInfoFile": "Permit Information File",
+      "parking": "Parking",
+      "arnonaDiscount": "Request for Arnona Discount",
+      "events": "Events",
+      "generalRequest": "General Request",
+      "arnonaRates": "Arnona Rates"
+    },
+    "certificates": {
+      "title": "Certificates and Forms",
+      "paymentAmount": "Certificate of Payment Amount",
+      "residentCertificate": "Resident Certificate for Tax Authority",
+      "openFile": "Open File",
+      "selfParticipation": "Self-Participation",
+      "waiverConfidentiality": "Waiver of Confidentiality",
+      "renewalTabuApproval": "Renewal of Tabu Approval",
+      "newSupplierRegistration": "New Supplier Registration",
+      "registrationClasses": "Registration for Classes",
+      "requestTabuApproval": "Request for Tabu Approval",
+      "welfare": "Welfare"
+    },
+    "personalArea": {
+      "title": "My Personal Area",
+      "personalDetails": "Personal Details",
+      "myPayments": "My Payments",
+      "accountSettings": "My Account Settings",
+      "supplierAuthority": "Supplier to the Authority?",
+      "residentCertificate": "Issuance of Resident Certificate",
+      "declarationPersons": "Declaration of Number of Persons",
+      "updateDetails": "Update Details",
+      "updateStandingOrder": "Update Standing Order by Credit Card",
+      "updateStandingOrderPayment": "Update Standing Order by Credit Payment"
+    },
+    "myProperty": {
+      "title": "My Property",
+      "propertyDetails": "My Property Details",
+      "propertyAddress": "Property Address",
+      "paymentArrangement": "Payment Arrangement",
+      "permitInfoFile": "Permit Information File",
+      "arnonaDiscounts": "Arnona Discounts",
+      "sendVoucherEmail": "Send Voucher to Email"
+    },
+    "payments": {
+      "title": "Payments and Collections",
+      "occasionalPayment": "Occasional Payment",
+      "debtBalancePayment": "Payment of Debt Balance",
+      "voucherPayment": "Voucher Payment",
+      "changePayers": "Change Payers"
+    }
+  },
+  "companyInfo": {
+    "title": "Behind the Connection Between the City and the Authority",
+    "paragraph1": {
+      "part": "Muni is a new digital platform by EPR Systems (part of TSG group), a company with over 20 years of experience in providing technological solutions to local authorities in Israel. We are proud to lead the shift towards fast and efficient digital communication between residents and authorities, offering advanced tools for management and effective service for both sides."
+    },
+    "paragraph2": {
+      "part1": "Muni was developed specifically for residents and local authority employees. We are committed to providing a simple, accessible, and secure user experience for residents, alongside intuitive and efficient tools for authority employees to manage services and provide quick, quality responses."
+    },
+    "paragraph3": "Our goal is to streamline communication between the resident and the authority and to promote advanced and accessible digital services for everyone.",
+    "buttonText": "For more information about the company, click here"
+  }
+}

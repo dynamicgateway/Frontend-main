@@ -1,0 +1,10 @@
+name = "muni-portal"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./dist"
+
+# Custom domain (optional)
+# routes = [
+#   { pattern = "muni.your-domain.com", custom_domain = true }
+# ]

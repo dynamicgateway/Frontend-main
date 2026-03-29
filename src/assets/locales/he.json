@@ -1,0 +1,405 @@
+{
+  "common": {
+    "title": "פיווטרס",
+    "next": "הבא",
+    "back": "חזרה",
+    "save": "שמור",
+    "cancel": "בטל",
+    "generalError": "משהו השתבש. נסה שוב מאוחר יותר.",
+    "generalSuccess": "הנתונים עודכנו בהצלחה",
+    "welcome": "ברוך הבא",
+    "logout": "התנתק",
+    "uploadResume": "העלה קורות חיים",
+    "onboardingNotCompleted": "השלם פרופיל כדי ליצור קורות חיים.",
+    "version": "v0.2.3"
+  },
+  "placeholders": {
+    "title": "כותרת",
+    "enter_here": "הזן כאן"
+  },
+  "snackbar_messages": {
+    "downloading_started": "ההורדה החלה.",
+    "downloading_failed": "ההורדה נכשלה.",
+    "downloading_completed": "ההורדה הושלמה. בדוק את תיקיית ההורדות.",
+    "something_went_wrong_please_try_again_later": "משהו השתבש. נסה שוב מאוחר יותר."
+  },
+  "appHeader": {
+    "pricing": "תמחור",
+    "help": "עזרה",
+    "notifications": "התראות",
+    "settings": "הגדרות",
+    "heyUser": "היי, {{name}}",
+    "user": "משתמש"
+  },
+  "validation_messages": {
+    "n_is_required": "{{n}} הוא שדה חובה",
+    "n_must_be_x_characters_or_less": "{{n}} חייב להיות עד {{x}} תווים",
+    "please_enter_an_email_address_using_the_following_format": "הזן דוא''ל בפורמט: \"User@domain.com\"",
+    "password_must_be_at_least_n_characters": "סיסמה חייבת להיות באורך של לפחות {{n}} תווים",
+    "password_must_contain_at_least_one_lowercase_letter_a_z": "סיסמה חייבת להכיל לפחות אות קטנה אחת (a-z)",
+    "password_must_contain_at_least_one_uppercase_letter_a_z": "סיסמה חייבת להכיל לפחות אות גדולה אחת (A-Z)",
+    "password_must_contain_at_least_one_number_0_9": "סיסמה חייבת להכיל לפחות מספר אחד (0-9)",
+    "password_must_contain_at_least_one_special_character_n": "סיסמה חייבת להכיל לפחות תו מיוחד אחד ({{n}})",
+    "passwords_dont_match": "הסיסמאות אינן תואמות",
+    "n_can_only_contain_letters_numbers_and_spaces": "{{n}} יכול להכיל רק אותיות, מספרים ורווחים",
+    "n_is_invalid": "{{n}} אינו תקין",
+    "failed_to_upload_n_files": "נכשל בהעלאת {{n}} קבצים.",
+    "file_name_already_exists_please_try_a_different_name": "שם הקובץ כבר קיים. נסה שם אחר."
+  },
+  "navBar": {
+    "activelyLookingForJob": "מחפש עבודה",
+    "switchTooltip": "זה עוזר לנו להתאים אותך למעסיקים"
+  },
+  "landingPage": {
+    "subtitle": "הפלטפורמה המונעת בינה מלאכותית שלנו מחברת בין מקצוענים להזדמנויות משמעותיות.",
+    "jobSeekerTitle": "אני מחפש עבודה",
+    "jobSeekerDesc": "בנה פרופיל בעזרת עוזר AI וקבל התאמות למשרות.",
+    "jobSeekerButtonText": "התחל כמועמד",
+    "employerTitle": "אני מגייס",
+    "findYouPerfect": "מצא התאמה",
+    "careerMatch": "מושלמת",
+    "employerDesc": "מצא את המועמדים המתאימים לצוות שלך.",
+    "employerButtonText": "התחל כמעסיק",
+    "jobSeekerIconAlt": "מחפש עבודה",
+    "employerIconAlt": "מעסיק",
+    "arrow": "→"
+  },
+  "navnar": {
+    "toggleText": "אני עדיין מחפש עבודה"
+  },
+  "login": {
+    "title": "התחברות",
+    "email": "דוא''ל",
+    "password": "סיסמה",
+    "rememberMe": "זכור אותי",
+    "forgotPassword": "שכחת סיסמה",
+    "goToLogin": "התחבר",
+    "errorMessage": "דוא''ל או סיסמה שגויים"
+  },
+  "signup": {
+    "title": "הרשמה",
+    "email": "דוא''ל",
+    "iAgreeWith": "אני מסכים ל",
+    "TermsAndConditions": " תנאים והגבלות",
+    "goToSignUp": "הרשם",
+    "gotToVerify": "עבור לאימות",
+    "emailSent": "שלחנו אימייל אימות, אנא בדוק את הדוא''ל."
+  },
+  "createPassword": {
+    "title": "יצירת סיסמה",
+    "typePassword": "הקלד סיסמה",
+    "reTypePassword": "הקלד שוב סיסמה",
+    "submit": "שלח",
+    "errorMessagePasswordsDoNotMatch": "הסיסמאות אינן תואמות"
+  },
+  "arnonaRequest": {
+    "title": "הגשת בקשה להנחה בארנונה",
+    "description": "ברוכים הבאים למערכת בקשות הנחה בארנונה. בין אם אתם רוצים לבדוק זכאות, להגיש בקשה חדשה או להשלים בקשה שכבר התחלתם - כל הפעולות זמינות לכם כאן.",
+    "discountCalculator": "מחשבון הנחה",
+    "existingRequest": "בקשה קיימת",
+    "newRequest": "בקשה חדשה",
+    "scheduleAppointmentText": "קביעת תור באגף ארנונה מעולם לא הייתה פשוטה יותר. לחצו ותאמו את ביקורכם בקלות.",
+    "scheduleAppointmentButton": "לזימון פגישה באגף ארנונה"
+  },
+  "resetPassword": {
+    "title": "איפוס סיסמה",
+    "prevPassword": "סיסמה קודמת",
+    "typePassword": "הקלד סיסמה",
+    "reTypePassword": "הקלד שוב סיסמה",
+    "submit": "שלח",
+    "errorMessagePasswordsDoNotMatch": "הסיסמה החדשה והסיסמה החוזרת חייבות להיות זהות"
+  },
+  "userSelection": {
+    "subtitle": "משתמש חדש או חוזר להמשך?",
+    "welcome": "ברוך הבא! האם",
+    "metBefore": "נפגשנו קודם",
+    "newUser": "אני חדש",
+    "existingUser": "משתמש קיים",
+    "arrow": "→"
+  },
+  "forgotPassword": {
+    "title": "שכחת סיסמה",
+    "email": "דוא''ל",
+    "submit": "שלח",
+    "errorMessage": "דוא''ל נדרש",
+    "verificationMailSent": "נשלח מייל אימות, בדוק את הדוא''ל"
+  },
+  "verifyUser": {
+    "title": "אימות משתמש",
+    "email": "הקלד דוא''ל",
+    "verificationCode": "קוד אימות",
+    "otp": "OTP",
+    "submit": "שלח",
+    "goToLogin": "עבור להתחברות",
+    "errorMessage": "דוא''ל נדרש",
+    "userVerified": "המשתמש אומת בהצלחה",
+    "userVerifiedTitle": "המשתמש אומת בהצלחה"
+  },
+  "resetForgotPassword": {
+    "title": "איפוס סיסמה",
+    "email": "הקלד דוא''ל",
+    "reTypeVerificationPassword": "הקלד שוב קוד אימות",
+    "verificationPassword": "קוד אימות",
+    "password": "הקלד סיסמה",
+    "reTypePassword": "הקלד שוב סיסמה",
+    "errorMessage": "דוא''ל נדרש",
+    "errorMessageOtp": "קוד אימות נדרש",
+    "errorMessagePassword": "סיסמה נדרשת",
+    "passwordUpdated": "הסיסמה עודכנה בהצלחה",
+    "submit": "אפס סיסמה",
+    "goToLogin": "עבור להתחברות"
+  },
+  "resumeViewer": {
+    "download": "הורד קורות חיים",
+    "resumePreview": "תצוגה מקדימה",
+    "close": "סגור"
+  },
+  "loader": {
+    "generatingResume": "אנחנו מייצרים את קורות החיים שלך, אנא המתן."
+  },
+  "authoritySelection": {
+    "welcomeTitle": "ברוכים הבאים למרחב הדיגיטלי של הרשות שלכם",
+    "description": "כאן תוכלו ליהנות מגישה נוחה, מהירה ומאובטחת למגוון שירותים, פעולות ותשלומים בקליק מול הרשות המקומית שלכם. המשיכו להתחברות.",
+    "selectAuthority": "בחר רשות",
+    "takeMeToAuthority": "קחו אותי לרשות",
+    "selectedAuthority": "רשות נבחרת:"
+  },
+  "newLogin": {
+    "quickLogin": "כניסה מהירה",
+    "iHavePassword": "יש לי סיסמא",
+    "mainTitle": "התחברו למרחב הדיגיטלי של הרשות שלכם",
+    "mainDescription": "ההזדהות נעשית על פי הנתונים המעודכנים במערכת הגביה של הרשות המקומית",
+    "idNumberLabel": "מספר זהות בן 9 ספרות",
+    "idNumberSubtext": "(כולל ספרת ביקורת)",
+    "idNumberRequired": "מספר זהות הוא שדה חובה",
+    "idNumberInvalid": "מספר זהות חייב להיות בן 9 ספרות בדיוק",
+    "idNumberNumeric": "מספר זהות חייב להכיל רק ספרות",
+    "emailMobileRequired": "כתובת אימייל או מספר נייד הוא שדה חובה",
+    "emailMobileInvalid": "יש להזין כתובת אימייל תקינה או מספר נייד תקין",
+    "idNumberPlaceholder": "מספר תעודת זהות/דרכון",
+    "emailMobileLabel": "כתובת אימייל / נייד",
+    "emailMobilePlaceholder": "כתובת אימיל/נייד",
+    "sendCodeButton": "שלח לי קוד",
+    "functionalityInPrep": "פונקציונליות בהכנה",
+    "loginWithoutAuth": "כניסה ללא הזדהות",
+    "notRegisteredYet": "עדיין לא רשומים?",
+    "clickHere": "לחצו כאן"
+  },
+  "verificationCode": {
+    "codeSentToNumber": "קוד האימות נשלח למספר",
+    "phoneNumber": "05X-XXX3425",
+    "mainInstruction": "הזן קוד אימות שקיבלת לכתובת המייל או הטלפון",
+    "verifyButton": "אימות",
+    "didntReceiveCode": "לא קיבלתם קוד?",
+    "clickToResend": "לחצו לשליחה חוזרת"
+  },
+  "passwordLogin": {
+    "payerNumberLabel": "מספר משלם",
+    "payerNumberPlaceholder": "מספר תעודת זהות/דרכון",
+    "payerNumberRequired": "מספר משלם הוא שדה חובה",
+    "payerNumberInvalid": "מספר משלם חייב להיות בן 9 ספרות בדיוק",
+    "payerNumberNumeric": "מספר משלם חייב להכיל רק ספרות",
+    "passwordLabel": "סיסמא",
+    "passwordPlaceholder": "סיסמא",
+    "passwordRequired": "סיסמא היא שדה חובה",
+    "passwordMinLength": "סיסמא חייבת להיות לפחות 6 תווים",
+    "forgotPassword": "שכחתי סיסמא",
+    "loginButton": "התחברות"
+  },
+  "nationalLogin": {
+    "quickLogin": "כניסה מהירה",
+    "iHavePassword": "יש לי סיסמא",
+    "mainTitle": "ברוכים הבאים למרחב הדיגיטלי של הרשות שלכם",
+    "mainDescription": "לאימות פרטייך באמצעות המערכת להזדהות לאומית",
+    "idNumberLabel": "מספר זהות בן 9 ספרות",
+    "idNumberSubtext": "(כולל ספרת ביקורת)",
+    "idNumberRequired": "מספר זהות הוא שדה חובה",
+    "idNumberInvalid": "מספר זהות חייב להיות בן 9 ספרות בדיוק",
+    "idNumberNumeric": "מספר זהות חייב להכיל רק ספרות",
+    "passwordLabel": "סיסמא",
+    "passwordPlaceholder": "סיסמא",
+    "passwordRequired": "סיסמא היא שדה חובה",
+    "passwordMinLength": "סיסמא חייבת להיות לפחות 6 תווים",
+    "idNumberPlaceholder": "מספר תעודת זהות/דרכון",
+    "loginButton": "כניסה",
+    "passwordLoginComingSoon": "פונקציונליות כניסה עם סיסמא בקרוב",
+    "loginWithoutAuth": "כניסה ללא הזדהות",
+    "notRegisteredYet": "עדיין לא רשומים?",
+    "clickHere": "לחצו כאן",
+    "quickLoginWithUsername": "לכניסה מהירה עם שם משתמש וסיסמה"
+  },
+  "nationalVerificationCode": {
+    "codeSentToNumber": "קוד האימות נשלח למספר",
+    "phoneNumber": "05X-XXX3425",
+    "mainInstruction": "מה הקוד שקיבלת?",
+    "codeValidFor": "הקוד תקף ל-5 דקות",
+    "verifyButton": "המשך למרחב הדיגיטלי של הרשות",
+    "didntReceiveCode": "לא קיבלתם קוד?",
+    "clickToResend": "לחצו לשליחה חוזרת"
+  },
+  "activityCard": {
+    "register": "להרשמה",
+    "group": "קבוצה",
+    "schedule": "ימים",
+    "instructor": "הדרכה",
+    "location": "מיקום"
+  },
+  "classesPage": {
+    "title": "חוגים ופעילויות",
+    "subtitle": "בחרו מהמגוון הרחב של החוגים והפעילויות שלנו",
+    "mainTitle": "החוג הבא מחכה לכם",
+    "description": "ברוכים הבאים לעמוד החוגים והפעילויות. ריכזנו עבורכם את כל החוגים הזמינים ברשות כדי שתוכלו למצוא בקלות את הפעילות שמתאימה בדיוק לכם ולילדיכם. גלו את החוג הבא שלכם!",
+    "search": {
+      "freeSearch": "חיפוש חופשי",
+      "freeSearchPlaceholder": "כדורגל, שחייה, מתמטיקה ומדעים...",
+      "activityField": "תחום החוג",
+      "activityFieldPlaceholder": "לבחירת התחום",
+      "classSelection": "בחירת החוג",
+      "classSelectionPlaceholder": "לבחירת החוג",
+      "searchButton": "חיפוש"
+    }
+  },
+  "education": {
+    "title": "חינוך",
+    "description": "מחפשים מידע על רישום לגן או לבית הספר? רוצים לרשום את ילדיכם לקייטנה או לחוג? הגעתם למקום הנכון! עמוד זה מרכז עבורכם את כל השירותים והמידע בנושאי חינוך ברשות.",
+    "kindergartenRegistration": "אתר רישום לגני ילדים וכיתות א",
+    "campRegistration": "רישום לקייטנות",
+    "showPlacement": "הצגת שיבוץ",
+    "classesRegistration": "הרשמה לחוגים",
+    "scheduleAppointmentText": "קביעת תור לאגף החינוך מעולם לא הייתה פשוטה יותר. לחצו ותאמו את ביקורכם בקלות.",
+    "scheduleAppointmentButton": "לזימון פגישה באגף החינוך"
+  },
+  "engineering": {
+    "title": "הנדסה",
+    "description": "ברוכים הבאים לעמוד שירותי ההנדסה הדיגיטליים של הרשות. כאן תוכלו לקבל גישה נוחה למגוון פעולות ומידע בנושאי הנדסה ותכנון, כגון חידוש אישורים, צפייה במידע תכנוני והגשת בקשות.",
+    "planningInformation": "דף מידע תכנוני",
+    "managerialReserveCourse": "השתתפות בקורס עתודה ניהולית",
+    "noDebtsCertificate": "אישור היעדר חובות",
+    "renewalNoDebts": "חידוש היעדר חובות",
+    "seniorCitizensHome": "תפעול בית הגימלאי",
+    "fitnessFacilities": "מתקני כושר ליד תיכון תבר 402",
+    "permitInformationFile": "תיק מידע להיתר",
+    "scheduleAppointmentText": "קביעת תור באגף ההנדסה מעולם לא הייתה פשוטה יותר. לחצו ותאמו את ביקורכם בקלות.",
+    "scheduleAppointmentButton": "לזימון פגישה באגף הנדסה"
+  },
+  "eventsInfoCardsPage": {
+    "title": "אירועים ופעילויות",
+    "mainTitle": "הזדמנויות וחוויות מחכות לכם",
+    "description": "ברוכים הבאים למרחב ההזדמנויות והפעילויות של הרשות! כאן תוכלו למצוא ולרכוש בקלות כרטיסים לאירועים מרתקים, להירשם לקורסים מקצועיים, להשתתף בהרצאות מעשירות ולשלם עבור שירותים ואגרות. גלו את כל האפשרויות שהרשות מציעה לכם.",
+    "search": {
+      "freeSearch": "חיפוש חופשי",
+      "freeSearchPlaceholder": "מה תרצו למצוא היום? הקלידו כאן...",
+      "eventCategory": "קטגוריית אירוע",
+      "eventCategoryPlaceholder": "לבחירת הקטגוריה",
+      "eventType": "סוג אירוע",
+      "eventTypePlaceholder": "לבחירת סוג האירוע",
+      "searchButton": "חיפוש"
+    }
+  },
+  "openRequestChangePayersPage": {
+    "title": "פתיחת בקשה להחלפת משלמים",
+    "instruction": "כדי להתחיל, בחר/י את סיבת ההחלפה",
+    "options": {
+      "purchaseSale": "קניה/מכירה של נכס",
+      "rentalContract": "התחלה/סיום חוזה שכירות"
+    }
+  },
+  "selectUserTypePage": {
+    "title": "פתיחת בקשה להחלפת משלמים",
+    "instruction": "בחר מי אתה",
+    "options": {
+      "outgoingTenant": "אני השוכר היוצא או בעל הנכס",
+      "incomingTenant": "השוכר הנכנס",
+      "buyer": "אני הקונה",
+      "seller": "אני המוכר"
+    }
+  },
+  "requestForLandRegistryPage": {
+    "title": "פתיחת בקשה לאישור לטאבו",
+    "description": "ברוכים הבאים למערכת להגשת בקשה מקוונת לאישור טאבו. המערכת מספקת מענה נוח ומהיר עבור מגוון פעולות, ביניהן אישור לעסקאות מכר, רישום בית משותף ועוד.",
+    "options": {
+      "salesTransaction": "עסקת מכר",
+      "sharedBuildingRegistration": "רישום בית משותף",
+      "inheritanceWill": "ירושה / קיום צוואה",
+      "transferWithoutConsideration": "העברה ללא תמורה",
+      "other": "אחר"
+    },
+    "issueApprovalText": "להפקת האישור",
+    "issueApprovalButton": "להפקת האישור"
+  },
+  "mainMenuPage": {
+    "navigation": {
+      "welfare": "רווחה",
+      "engineering": "הנדסה",
+      "parking": "חניה",
+      "supervision": "פיקוח",
+      "classes": "חוגים"
+    },
+    "quickActions": {
+      "title": "פעולות מהירות",
+      "engineering": "הנדסה",
+      "noDebtsCertificate": "אישור היעדר חובות",
+      "planningInfoSheet": "דף מידע תכנוני",
+      "managementCourse": "השתתפות בקורס עתודה ניהולית",
+      "renewalNoDebts": "חידוש היעדר חובות",
+      "permitInfoFile": "תיק מידע להיתר",
+      "parking": "חניה",
+      "arnonaDiscount": "בקשת הנחה לארנונה",
+      "events": "אירועים",
+      "generalRequest": "בקשה כללית",
+      "arnonaRates": "תעריפי ארנונה"
+    },
+    "certificates": {
+      "title": "אישורים וטפסים",
+      "paymentAmount": "אישור על גובה תשלומים",
+      "residentCertificate": "אישור תושב לרשות המיסים",
+      "openFile": "פתיחת תיק",
+      "selfParticipation": "השתתפות עצמית",
+      "waiverConfidentiality": "ויתור סודיות",
+      "renewalTabuApproval": "חידוש אישור לטאבו",
+      "newSupplierRegistration": "רישום ספק חדש",
+      "registrationClasses": "הרשמה לחוגים",
+      "requestTabuApproval": "בקשה לאישור בטאבו",
+      "welfare": "רווחה"
+    },
+    "personalArea": {
+      "title": "האזור האישי שלי",
+      "personalDetails": "פרטים אישיים",
+      "myPayments": "התשלומים שלי",
+      "accountSettings": "הגדרות החשבון שלי",
+      "supplierAuthority": "ספק של הרשות?",
+      "residentCertificate": "הפקת אישור תושב",
+      "declarationPersons": "הצהרת מספר נפשות",
+      "updateDetails": "עדכון פרטים",
+      "updateStandingOrder": "עדכון הוראת קבע בכרטיס אשראי",
+      "updateStandingOrderPayment": "עדכון הוראת קבע בתשלום אשראי"
+    },
+    "myProperty": {
+      "title": "הנכס שלי",
+      "propertyDetails": "פרטי הנכס שלי",
+      "propertyAddress": "כתובת הנכס",
+      "paymentArrangement": "הסדר תשלום",
+      "permitInfoFile": "תיק מידע להיתר",
+      "arnonaDiscounts": "הנחות ארנונה",
+      "sendVoucherEmail": "שליחת שובר למייל"
+    },
+    "payments": {
+      "title": "תשלומים וגבייה",
+      "occasionalPayment": "תשלום מזדמן",
+      "debtBalancePayment": "תשלום יתרת חוב",
+      "voucherPayment": "תשלום שובר",
+      "changePayers": "החלפת משלמים"
+    }
+  },
+  "companyInfo": {
+    "title": "מאחורי החיבור בין העיר לרשות",
+    "paragraph1": {
+      "part": "מוני הוא פלטפורמה דיגיטלית חדשה של  EPR Systems (חלק מקבוצת TSG), חברה עם יותר מ-20 שנות ניסיון במתן פתרונות טכנולוגיים לרשויות מקומיות בישראל. אנו גאים להוביל את המעבר לתקשורת דיגיטלית מהירה ויעילה בין התושבים לרשויות, תוך הצעת כלים מתקדמים לניהול ושירות יעיל לשני הצדדים."
+    },
+    "paragraph2": {
+      "part1": "מוני פותח במיוחד עבור תושבים ועובדי רשויות מקומיות. אנו מתחייבים לספק חוויית משתמש פשוטה, נגישה ומאובטחת עבור התושבים, לצד כלים אינטואיטיביים ויעילים עבור עובדי הרשות לניהול שירותים ולמתן תגובות מהירות ואיכותיות."
+    },
+    "paragraph3": "המטרה שלנו היא לייעל את התקשורת בין התושב לרשות ולקדם שירותים דיגיטליים מתקדמים ונגישים לכולם.",
+    "buttonText": "למידע נוסף על החברה לחצו כאן"
+  }
+}

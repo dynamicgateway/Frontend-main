@@ -1,0 +1,6 @@
+!/.storybook
+/package-lock.json
+/dist
+/build
+/storybook-static
+/vite.config.ts.timestamp*

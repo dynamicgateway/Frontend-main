@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear MUNI Storage</title>
+    <script>
+        // Clear all storage
+        localStorage.clear();
+        sessionStorage.clear();
+        console.log('✓ All storage cleared');
+        
+        // Redirect to login
+        setTimeout(() => {
+            window.location.href = '/login';
+        }, 500);
+    </script>
+</head>
+<body>
+    <h1>Clearing storage...</h1>
+    <p>Redirecting to login...</p>
+</body>
+</html>

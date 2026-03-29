@@ -1,0 +1,80 @@
+.mainContainer {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.titleColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-weight: 100;
+  font-size: 1.25rem;
+  color: #b0b0b0;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background: #f7f7fa;
+  border-radius: 24px;
+  padding: 2rem 0;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04);
+}
+
+.cardImage {
+  width: 220px;
+  height: 220px;
+  margin-bottom: 16px;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(179, 12, 255, 0.1);
+  color: #fff;
+  background: linear-gradient(149.44deg, #b30cff 3.27%, #6c0aed 106.82%);
+}
+
+.buttonBlue {
+  background: linear-gradient(59.44deg, #01c8f5 0%, #038af5 100%);
+  color: #fff;
+}

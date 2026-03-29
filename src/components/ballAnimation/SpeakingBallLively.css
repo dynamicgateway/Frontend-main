@@ -1,0 +1,534 @@
+/**
+ * Wave animations for the SpeakingBallLively component
+ */
+
+@keyframes wave1 {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(-10%) scaleY(1.1);
+  }
+}
+
+@keyframes wave2 {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(10%) scaleY(0.9);
+  }
+}
+
+/**
+ * SpeakingBall Component Styles
+ * 
+ * This file contains all the styles for the SpeakingBall component, including:
+ * - Crystal ball appearance with purple and blue gradients
+ * - Smoke animation keyframes for voice visualization
+ * - Responsive design for different screen sizes
+ * - Microphone status indicators
+ */
+
+/* ==========================================================================
+   ANIMATION KEYFRAMES
+   ========================================================================== */
+
+/**
+ * Smoke Float Animation
+ * Creates a floating motion for smoke elements that rise from bottom to top
+ * with rotation and scaling effects for realistic smoke movement
+ */
+@keyframes smoke-float {
+  0% {
+    transform: translateY(100%) scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(80%) scale(0.8) rotate(45deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(50%) scale(1.2) rotate(90deg);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateY(20%) scale(0.9) rotate(135deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-20%) scale(0.3) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Smoke Swirl Animation
+ * Creates a swirling motion for smoke elements with more dramatic rotation
+ * and scaling effects for varied smoke behavior
+ */
+@keyframes smoke-swirl {
+  0% {
+    transform: translateY(100%) scale(0.3) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(75%) scale(0.7) rotate(90deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(50%) scale(1.1) rotate(180deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateY(25%) scale(0.8) rotate(270deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-10%) scale(0.2) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/**
+ * Background Rotate Animation
+ * Creates a continuous rotating background effect for the crystal ball
+ */
+@keyframes background-rotate {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/**
+ * Speaking Pulse Animation
+ * Creates a pulsing effect when the user is speaking
+ */
+@keyframes speaking-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 20px rgba(147, 51, 234, 0.3),
+      0 0 40px rgba(59, 130, 246, 0.2);
+  }
+  50% {
+    transform: scale(1.3);
+    box-shadow:
+      0 0 30px rgba(147, 51, 234, 0.6),
+      0 0 60px rgba(59, 130, 246, 0.4);
+  }
+}
+
+/**
+ * Ball Enlarge Animation
+ * Makes the ball grow larger when speaking
+ */
+@keyframes ball-enlarge {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+/**
+ * Microphone Pulse Animation
+ * Creates a pulsing effect for the microphone status indicator
+ * to show when the microphone is active
+ */
+@keyframes mic-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/**
+ * Pulse Animation
+ * Creates a pulsing effect for the inner glow
+ */
+/* @keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.9;
+  }
+} */
+
+/**
+ * Ripple Animation
+ * Creates an expanding ring effect
+ */
+/* @keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+} */
+
+/**
+ * Particle Animations
+ * Creates moving particle effects inside the ball
+ */
+/* @keyframes particle1 {
+  0% {
+    transform: rotate(0deg) translateX(20px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+
+@keyframes particle2 {
+  0% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(15px) rotate(360deg);
+  }
+}
+
+@keyframes particle3 {
+  0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(25px) rotate(-360deg);
+  }
+} */
+
+/* ==========================================================================
+   MAIN COMPONENT STYLES
+   ========================================================================== */
+
+/**
+ * Speaking Ball Container
+ * Main container for the crystal ball component
+ */
+.speaking-ball {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+}
+
+/**
+ * Crystal Ball Element
+ * The main ball with gradient background and glow effects
+ */
+.ball {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* Colorful gradient background matching the image */
+  background: radial-gradient(
+    circle at calc(30% + var(--volume, 0) * 20%) calc(30% + var(--volume, 0) * 20%),
+    rgba(173, 216, 230, 0.9) 0%,
+    rgba(138, 43, 226, 0.8) 15%,
+    rgba(64, 224, 208, 0.7) 35%,
+    rgba(255, 255, 0, 0.6) 55%,
+    rgba(255, 165, 0, 0.5) 90%,
+    rgba(255, 165, 0, 0.5) 100%
+  );
+  /* Multi-layered shadow for crystal glow effect */
+  box-shadow:
+    0 0 calc(20px + var(--volume, 0) * 20px) rgba(173, 216, 230, 0.4),
+    0 0 calc(40px + var(--volume, 0) * 30px) rgba(138, 43, 226, 0.3),
+    0 0 calc(60px + var(--volume, 0) * 40px) rgba(64, 224, 208, 0.2),
+    inset 0 0 calc(20px + var(--volume, 0) * 10px) rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-size: 300% 300%;
+  animation: background-rotate 4s linear infinite;
+}
+
+/**
+ * Ball Background Layer
+ * Additional gradient overlays for enhanced crystal appearance
+ */
+.ball-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* Multiple radial gradients for depth and highlights */
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(147, 51, 234, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   SMOKE ANIMATION STYLES
+   ========================================================================== */
+
+/**
+ * Base Smoke Element
+ * Common styles for all smoke particles
+ */
+.smoke {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  pointer-events: none;
+  filter: blur(3px); /* Blur effect for realistic smoke appearance */
+}
+
+/**
+ * Purple Smoke Elements
+ * Primary voice indicators with purple color scheme
+ */
+.smoke-1 {
+  left: 35%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(147, 51, 234, 0.9) 0%,
+    rgba(147, 51, 234, 0.7) 30%,
+    rgba(147, 51, 234, 0.4) 70%,
+    transparent 100%
+  );
+  animation: smoke-float infinite ease-out;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.smoke-3 {
+  left: 65%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(147, 51, 234, 0.8) 0%,
+    rgba(147, 51, 234, 0.6) 30%,
+    rgba(147, 51, 234, 0.3) 70%,
+    transparent 100%
+  );
+  animation: smoke-float infinite ease-out;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.smoke-5 {
+  left: 55%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(147, 51, 234, 0.7) 0%,
+    rgba(147, 51, 234, 0.5) 30%,
+    rgba(147, 51, 234, 0.2) 70%,
+    transparent 100%
+  );
+  animation: smoke-float infinite ease-out;
+  animation-duration: 3.8s;
+  animation-delay: 2s;
+}
+
+/**
+ * Blue Smoke Elements
+ * Secondary voice indicators with blue color scheme
+ */
+.smoke-2 {
+  left: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.9) 0%,
+    rgba(59, 130, 246, 0.7) 30%,
+    rgba(59, 130, 246, 0.4) 70%,
+    transparent 100%
+  );
+  animation: smoke-swirl infinite ease-out;
+  animation-duration: 3.5s;
+  animation-delay: 0.5s;
+}
+
+.smoke-4 {
+  left: 45%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.8) 0%,
+    rgba(59, 130, 246, 0.6) 30%,
+    rgba(59, 130, 246, 0.3) 70%,
+    transparent 100%
+  );
+  animation: smoke-swirl infinite ease-out;
+  animation-duration: 3.2s;
+  animation-delay: 1.5s;
+}
+
+/* ==========================================================================
+   SPEAKING STATES
+   ========================================================================== */
+
+/**
+ * Speaking State
+ * Enhanced effects when user is actively speaking
+ */
+.speaking-ball.speaking .ball {
+  animation:
+    speaking-pulse 1s ease-in-out infinite,
+    background-rotate 3s linear infinite,
+    ball-enlarge 0.5s ease-out forwards;
+}
+
+.speaking-ball.speaking .smoke {
+  animation-duration: 2s;
+}
+
+/* ==========================================================================
+   DISABLED STATE
+   ========================================================================== */
+
+/**
+ * Disabled State
+ * Fades the ball and disables all functionality
+ */
+.speaking-ball.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.speaking-ball.disabled .ball {
+  animation: none;
+  filter: grayscale(50%);
+}
+
+.speaking-ball.disabled .smoke {
+  display: none;
+}
+
+.speaking-ball.disabled .mic-indicator {
+  display: none;
+}
+
+/* ==========================================================================
+   TOGGLE BUTTON
+   ========================================================================== */
+
+/**
+ * Toggle Button
+ * Button to enable/disable the speaking ball
+ */
+.speaking-ball-toggle {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.speaking-ball-toggle:hover {
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.speaking-ball-toggle:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+/* ==========================================================================
+   MICROPHONE STATUS INDICATORS
+   ========================================================================== */
+
+/**
+ * Microphone Status Indicator
+ * Small dot showing microphone status (green=ready, red=active, orange=error)
+ */
+.mic-indicator {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/**
+ * Error State Indicator
+ * Orange pulsing dot when microphone access is denied
+ */
+.mic-indicator.error {
+  background-color: #ffaa00;
+  animation: mic-pulse 1s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   INTERACTIVE STATES
+   ========================================================================== */
+
+/**
+ * Hover Effect
+ * Subtle scale and glow enhancement when hovering over the ball
+ */
+.speaking-ball:hover .ball {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 30px rgba(147, 51, 234, 0.5),
+    0 0 60px rgba(59, 130, 246, 0.3),
+    inset 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/**
+ * Mobile Responsive Adjustments
+ * Smaller ball size and indicators for mobile devices
+ */
+@media (max-width: 768px) {
+  .speaking-ball {
+    width: 150px;
+    height: 150px;
+  }
+
+  .mic-indicator {
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 10px;
+  }
+}

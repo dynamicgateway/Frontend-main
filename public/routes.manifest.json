@@ -1,0 +1,23 @@
+[
+  { "path": "/", "name": "Home", "category": "Core" },
+  { "path": "/login", "name": "Login", "category": "Auth" },
+  { "path": "/national-login", "name": "National Login", "category": "Auth" },
+  { "path": "/forgot-password", "name": "Forgot Password", "category": "Auth" },
+  { "path": "/reset-forgot-password", "name": "Reset Forgot Password", "category": "Auth" },
+  { "path": "/reset-password", "name": "Reset Password", "category": "Auth" },
+  { "path": "/municipal-selection", "name": "Authority Selection", "category": "Auth" },
+  { "path": "/formio-test", "name": "Form.io Test", "category": "Forms" },
+  { "path": "/arnona-request", "name": "Arnona Request", "category": "Municipal" },
+  { "path": "/classes", "name": "Classes", "category": "Education" },
+  { "path": "/education", "name": "Education", "category": "Education" },
+  { "path": "/engineering", "name": "Engineering", "category": "Engineering" },
+  { "path": "/events-info-cards", "name": "Events Info Cards", "category": "Events" },
+  { "path": "/open-request-change-payers", "name": "Open Request Change Payers", "category": "Municipal" },
+  { "path": "/select-user-type", "name": "Select User Type", "category": "Auth" },
+  { "path": "/request-for-land-registry", "name": "Request for Land Registry", "category": "Municipal" },
+  { "path": "/forms", "name": "Forms", "category": "Forms" },
+  { "path": "/iframe-demo", "name": "IFrame Form Demo", "category": "Forms" },
+  { "path": "/main-menu", "name": "Main Menu", "category": "Core" },
+  { "path": "/dashboard", "name": "Dashboard", "category": "Core" },
+  { "path": "/events", "name": "Events", "category": "Events" }
+]

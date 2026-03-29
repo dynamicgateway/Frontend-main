@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SDK Test</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>SDK Load Test</h1>
+    <div id="status">Loading...</div>
+    
+    <script>
+        console.log('[Test] Starting SDK load test...');
+        
+        // Test if SDK script can be loaded
+        const script = document.createElement('script');
+        script.src = 'http://localhost:5173/integration-sdk-v2.js';
+        script.onload = () => {
+            document.getElementById('status').innerHTML = '<span style="color: green;">✓ SDK Loaded!</span>';
+            console.log('[Test] SDK loaded successfully');
+            console.log('[Test] DynamicGatewaySDK:', window.DynamicGatewaySDK);
+        };
+        script.onerror = (error) => {
+            document.getElementById('status').innerHTML = '<span style="color: red;">✗ SDK Failed to Load</span>';
+            console.error('[Test] SDK failed to load:', error);
+        };
+        document.head.appendChild(script);
+        
+        // Test transformation API
+        fetch('http://localhost:5173/api/transformations?siteId=site-muni-001&page=/login')
+            .then(res => res.json())
+            .then(data => {
+                console.log('[Test] Transformation API response:', data);
+                document.getElementById('status').innerHTML += '<br><span style="color: blue;">Transformations: ' + data.transformations.length + '</span>';
+            })
+            .catch(error => {
+                console.error('[Test] Transformation API error:', error);
+                document.getElementById('status').innerHTML += '<br><span style="color: red;">API Error: ' + error.message + '</span>';
+            });
+    </script>
+</body>
+</html>
